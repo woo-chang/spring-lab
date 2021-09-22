@@ -27,6 +27,17 @@ dependencies {
 
     implementation 'log4j:log4j:1.2.17'
 
+    // JDBC Connection
+    implementation files('libs/ojdbc8.jar')
+    testImplementation files('libs/ojdbc8.jar')
+
+    // HikariCP
+    implementation 'com.zaxxer:HikariCP:2.7.4'
+
+    // SLF4F
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+
 }
 
 test {
