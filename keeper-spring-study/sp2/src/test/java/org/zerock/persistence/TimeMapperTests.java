@@ -12,7 +12,6 @@ import org.zerock.config.RootConfig;
 import org.zerock.mapper.TimeMapper;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-// @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 // Java
 @ContextConfiguration(classes = {RootConfig.class})
 @Log4j

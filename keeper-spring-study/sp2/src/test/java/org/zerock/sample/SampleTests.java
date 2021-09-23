@@ -12,7 +12,6 @@ import org.zerock.config.RootConfig;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml") xml 이용하는 방법
 @ContextConfiguration(classes = {RootConfig.class}) // Java 이용하는 방법
 @Log4j
 public class SampleTests {

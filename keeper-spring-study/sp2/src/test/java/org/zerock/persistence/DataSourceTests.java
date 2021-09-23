@@ -17,7 +17,6 @@ import java.sql.Connection;
 import static org.junit.Assert.fail;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 // Java 설정
 @ContextConfiguration(classes = {RootConfig.class})
 @Log4j
