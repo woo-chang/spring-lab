@@ -66,4 +66,9 @@ public class BoardController {
         }
         return "redirect:/board/list";
     }
+
+    @GetMapping("/register") // POST지만 화면으로 볼 수 있도록 하기 위한 GET
+    public void register() {
+
+    }
 }
