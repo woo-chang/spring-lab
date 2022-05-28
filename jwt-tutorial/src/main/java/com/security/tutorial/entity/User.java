@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity // 데이터베이스 테이블과 1대1 매칭되는 객체
-@Table(name = "user") // 테이블명을 user로 지정
+@Table(name = "users") // 테이블명을 user로 지정
 @Getter
 @Setter
 @Builder
