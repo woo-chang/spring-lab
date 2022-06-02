@@ -24,8 +24,8 @@ public class MemberDao {
     String server = "localhost:3306";
     String database = "jdbc_test";
     String option = "?serverTimezone=UTC&characterEncoding=UTF-8";
-    String username = "root";
-    String password = "Woo7ang@2";
+    String username = "####";
+    String password = "####";
 
     try {
       Class.forName("com.mysql.cj.jdbc.Driver");
