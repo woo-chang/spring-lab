@@ -1,5 +1,6 @@
 package com.example.websocket.controller;
 
+import com.example.websocket.dto.SocketResult;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -38,9 +39,9 @@ public class SocketController {
   /**
    * 단순 호출로 메시지를 보내는 방법
    */
-  @GetMapping(value="/vote3")
+  @GetMapping(value="/v1/elections/votes")
   public void SendAPI() {
-    webSocket.convertAndSend("/topics/vote3" , "투표 인원 증가3");
+    webSocket.convertAndSend("/topics/vote3", new SocketResult(10, 5, 50.00));
   }
 
 }
