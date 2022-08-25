@@ -21,7 +21,12 @@ function App() {
     <div>
       <SockJsClient
         url="http://localhost:8080/v1/vote"
-        topics={["/topics/vote1", "/topics/vote2", "/topics/vote3"]}
+        topics={[
+          "/topics/vote1",
+          "/topics/vote2",
+          "/topics/votes/result",
+          "/topics/votes/end",
+        ]}
         onMessage={(msg) => {
           console.log(msg);
         }}

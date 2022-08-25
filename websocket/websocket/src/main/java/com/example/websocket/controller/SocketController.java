@@ -39,9 +39,14 @@ public class SocketController {
   /**
    * 단순 호출로 메시지를 보내는 방법
    */
-  @GetMapping(value="/v1/elections/votes")
-  public void SendAPI() {
-    webSocket.convertAndSend("/topics/vote3", new SocketResult(10, 5, 50.00));
+  @GetMapping(value="/v1/websocket/votes/result")
+  public void SendResult() {
+    webSocket.convertAndSend("/topics/votes/result", new SocketResult(10, 5, 50.00));
+  }
+
+  @GetMapping(value="/v1/websocket/votes/end")
+  public void SendEnd() {
+    webSocket.convertAndSend("/topics/votes/end", new SocketResult(10, 3, 30.00));
   }
 
 }
