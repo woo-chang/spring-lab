@@ -1,8 +1,0 @@
-spring:
-  datasource:
-    # 해당 DBMS와 연결하기 위한 Driver
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    # 데이터베이스의 url
-    url: jdbc:mysql://localhost:3306/jdbc_test?serverTimezone=UTC&characterEncoding=UTF-8
-    username: ####
-    password: ####
