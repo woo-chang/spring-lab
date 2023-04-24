@@ -17,6 +17,11 @@ public class ViewController {
         System.out.println("call layout void");
     }
 
+    @GetMapping("/hello/layout")
+    public void layoutHelloVoid() {
+        System.out.println("call layout hello void");
+    }
+
     @GetMapping("/layout/dto")
     public ViewDto layoutDto() {
         return new ViewDto(1L, "layout");
