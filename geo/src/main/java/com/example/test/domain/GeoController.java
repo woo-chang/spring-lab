@@ -1,5 +1,6 @@
 package com.example.test.domain;
 
+import java.math.BigDecimal;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +27,17 @@ public class GeoController {
     public ResponseEntity<List<GeoResponse>> getGeosV2() {
         List<GeoResponse> response = geoService.getGeosV2();
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/distance")
+    public ResponseEntity<Double> getDistance(
+            BigDecimal x1,
+            BigDecimal y1,
+            BigDecimal x2,
+            BigDecimal y2
+    ) {
+        double distance = geoService.getDistance(x1, y1, x2, y2);
+        return ResponseEntity.ok(distance);
     }
 
     @PostMapping
